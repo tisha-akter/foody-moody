@@ -8,6 +8,12 @@ const nextConfig = {
             port: '',
             pathname: '/**',
           },
+          {
+            protocol: 'https',
+            hostname: 'testo-livid.vercel.app',
+            port: '',
+            pathname: '/**',
+          },
         ],
       },
 }

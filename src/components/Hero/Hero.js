@@ -16,24 +16,29 @@ export default function Hero() {
                   alt="image" src='https://wpbingosite.com/wordpress/econis/wp-content/webp-express/webp-images/uploads/2021/06/img5-4.png.webp' />
 
                 </div>
-                <h1 className="title-font sm:text-6xl text-3xl  mb-8 md:mb-2 lg:mb-8 font-medium text-gray-900">
+                <h1 className="title-font sm:text-6xl text-3xl mt-4  mb-8 md:mb-2 lg:mb-8 font-medium text-gray-900">
                   Savor Every Bite, Indulge Your <span className='text-orange-600'>Foody Moody</span> Delight!
                 </h1>
-                <p className="mb-8 md:mb-3 lg:mb-8 leading-relaxed text-xl md:text-sm lg:text-xl">
+                <p className=" mt-3 mb-8 md:mb-3 lg:mb-8 leading-relaxed text-xl md:text-sm lg:text-xl">
                   Welcome to Foody Moody, where flavor reigns supreme. Dive into a world of culinary bliss, where every dish is a masterpiece. Our chefs craft unforgettable experiences, blending fresh ingredients and creativity. Join us in savoring life's delicious moments – your journey into flavor starts here!
                 </p>
 
-                <div className=" flex gap-4">
-                  <button className="inline-flex text-white bg-orange-600 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Order Now!!!</button>
-                  <button className="inline-flex text-white bg-indigo-600 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded-full text-lg">Learn More!!!</button>
+                <div className=" flex gap-4 mt-4">
+                  <button className="inline-flex text-white bg-orange-600 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Order Now!!!</button>
+                  <button className="inline-flex text-white bg-gray-600 border-0 py-2 px-8 focus:outline-none hover:bg-orange-600 rounded-full text-lg">Learn More!!!</button>
 
                 </div>
               </div>
               <div className="flex items-end md:w-1/2  lg:-mb-12  -mb-6">
-                <img className="object-cover object-center rounded"
-                  alt="image" src='https://landing.wpbingosite.com/econis/assets/img/icon-3.png' />
+                
                 <img className="object-cover object-center rounded"
                   alt="image" src='https://testo-livid.vercel.app/images/about-02-img.png' />
+                   {/* <img className="object-cover object-center rounded"
+                  alt="image" src='https://testo-livid.vercel.app/images/hero-4-img.png' /> */}
+                {/* <img className="object-cover object-center rounded"
+                  alt="image" src='https://testo-livid.vercel.app/assests/images/img-01.png' />
+                <img className="object-cover object-center rounded"
+                  alt="image" src='https://wpbingosite.com/wordpress/econis/wp-content/webp-express/webp-images/uploads/2021/06/img5-4.png.webp' /> */}
               </div>
             </div>
           </section>
