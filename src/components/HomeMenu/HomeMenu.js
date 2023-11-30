@@ -1,18 +1,20 @@
 import Image from "next/image";
+import MenuItem from "../MenuItem/MenuItem";
 
 export default function HomeMenu() {
     return (
-        <section className="container ">
-            <div className="mx-auto px-4 pt-10">
-                <div className="absolute h-full left-0 right-0 w-full justify-start">
-                    <div className="absolute left-0 -top-[100px] text-left -z-10">
-                        {/* <Image
-                            alt="image" src='https://testo-livid.vercel.app/assests/images/img-01.png' width='207' height='296' /> */}
-                    </div>
-                    <div>
+        <section className="container mx-auto px-4 pt-10">
+            <div className=' text-center font-light text-gray-500 sm:text-lg dark:text-gray-400 py-5'>
+                <h1 className="mb-4 mt-28 text-4xl tracking-tight font-extrabold font-serif text-gray-900 dark:text-white">Check Our <span className="text-orange-600">Menu</span></h1>
 
-                    </div>
-                </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 mb-20 w-full">
+              <MenuItem></MenuItem>
+              <MenuItem></MenuItem>
+              <MenuItem></MenuItem>
+              <MenuItem></MenuItem>
+              <MenuItem></MenuItem>
+              <MenuItem></MenuItem>
             </div>
         </section>
     );

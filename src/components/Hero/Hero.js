@@ -24,7 +24,7 @@ export default function Hero() {
                 </p>
 
                 <div className=" flex gap-4 mt-4">
-                  <button className="inline-flex text-white bg-orange-600 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Order Now!!!</button>
+                  <button className="inline-flex text-white bg-orange-600 border-0 py-2 px-8 focus:outline-none hover:bg-gray-600  rounded-full text-lg">Order Now!!!</button>
                   <button className="inline-flex text-white bg-gray-600 border-0 py-2 px-8 focus:outline-none hover:bg-orange-600 rounded-full text-lg">Learn More!!!</button>
 
                 </div>
@@ -33,12 +33,6 @@ export default function Hero() {
                 
                 <img className="object-cover object-center rounded"
                   alt="image" src='https://testo-livid.vercel.app/images/about-02-img.png' />
-                   {/* <img className="object-cover object-center rounded"
-                  alt="image" src='https://testo-livid.vercel.app/images/hero-4-img.png' /> */}
-                {/* <img className="object-cover object-center rounded"
-                  alt="image" src='https://testo-livid.vercel.app/assests/images/img-01.png' />
-                <img className="object-cover object-center rounded"
-                  alt="image" src='https://wpbingosite.com/wordpress/econis/wp-content/webp-express/webp-images/uploads/2021/06/img5-4.png.webp' /> */}
               </div>
             </div>
           </section>
