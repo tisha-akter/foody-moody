@@ -1,3 +1,4 @@
+import About from "@/components/About/About";
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import HomeMenu from "@/components/HomeMenu/HomeMenu";
@@ -10,6 +11,7 @@ export default function Home() {
      <Header></Header>
      <Hero></Hero>
      <HomeMenu></HomeMenu>
+     <About></About>
     </>
   )
 }
