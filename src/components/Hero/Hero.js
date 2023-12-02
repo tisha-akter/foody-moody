@@ -13,10 +13,10 @@ export default function Hero() {
                 <div className='flex items-center justify-center'>
                   <img className='' src="https://fastwpdemo.com/newwp/ticrou/wp-content/uploads/2022/09/about-2.png" alt="" />
                   <img className="object-cover object-center rounded"
-                  alt="image" src='https://wpbingosite.com/wordpress/econis/wp-content/webp-express/webp-images/uploads/2021/06/img5-4.png.webp' />
+                    alt="image" src='https://wpbingosite.com/wordpress/econis/wp-content/webp-express/webp-images/uploads/2021/06/img5-4.png.webp' />
 
                 </div>
-                <h1 className="title-font sm:text-6xl text-3xl mt-4  mb-8 md:mb-2 lg:mb-8 font-medium text-gray-900">
+                <h1 className="title-font sm:text-6xl text-3xl mt-4  mb-8 md:mb-2 lg:mb-8 font-medium text-gray-600">
                   Savor Every Bite, Indulge Your <span className='text-orange-600'>Foody Moody</span> Delight!
                 </h1>
                 <p className=" mt-3 mb-8 md:mb-3 lg:mb-8 leading-relaxed text-xl md:text-sm lg:text-xl">
@@ -30,7 +30,7 @@ export default function Hero() {
                 </div>
               </div>
               <div className="flex items-end md:w-1/2  lg:-mb-12  -mb-6">
-                
+
                 <img className="object-cover object-center rounded"
                   alt="image" src='https://testo-livid.vercel.app/images/about-02-img.png' />
               </div>

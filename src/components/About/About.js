@@ -1,6 +1,6 @@
 export default function About() {
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero min-h-screen">
             <div className="hero-content flex-col lg:flex-row">
                 <div className='lg:w-1/2 relative'>
                     <img src="https://testo-livid.vercel.app/images/hero-4-img.png" alt="burger" className="w-3/4 rounded-lg shadow-2xl" />
