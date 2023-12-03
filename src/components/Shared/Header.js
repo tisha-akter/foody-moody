@@ -1,9 +1,10 @@
-import Link from "next/link";
+import Link from 'next/link';
+import React from 'react';
 
-export default function Header() {
+const Header = () => {
     return (
-        <>
-            <div className="navbar bg-base-100">
+        <div> 
+             <div className="navbar bg-base-100 container mx-auto p-4">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -38,6 +39,8 @@ export default function Header() {
                 </div>
 
             </div>
-        </>
+        </div>
     );
-}
+};
+
+export default Header;
