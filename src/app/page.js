@@ -14,6 +14,7 @@ export default function Home() {
      <Hero></Hero>
      <HomeMenu></HomeMenu>
      <About></About>
+     
     </>
   )
 }

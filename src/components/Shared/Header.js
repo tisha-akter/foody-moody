@@ -35,7 +35,7 @@ const Header = () => {
                             <span className="badge badge-sm indicator-item">8</span>
                         </div>
                     </div>
-                    <button className='bg-orange-600 text-white px-6 py-2 rounded-full'>Login</button>
+                    <Link className='bg-orange-600 text-white px-6 py-2 rounded-full' href={'/login'}>Login</Link >
                 </div>
 
             </div>
