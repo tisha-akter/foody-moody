@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 import { FaGoogle } from "react-icons/fa";
 
@@ -9,13 +10,30 @@ const Register = () => {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [terms, setTerms] = useState('');
-    function handleFromSubmit(ev){
+    const [creatingUser, setCreatingUser] = useState(false);
+    const [userCreated, setUserCreated] = useState(false);
+    const [error, setError] = useState(false);
+
+     async function handleFromSubmit(ev){
         ev.preventDefault();
-        fetch('../api/register', {
+        setCreatingUser(true);
+        setError(false);
+        setUserCreated(false);
+       const response = await fetch('/api/register', {
             method: 'POST',
             body: JSON.stringify({email, password, confirmPassword, terms}),
             headers: {'Content-Type': 'application/json'},
         });
+
+        console.log("resss", response);
+
+        if (response.ok) {
+            setUserCreated(true);
+          }
+          else {
+            setError(true);
+          }
+          setCreatingUser(false);
     }
 
     return (
@@ -31,7 +49,22 @@ const Register = () => {
                         <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                             Create an account
                         </h1>
-                        <form className="space-y-4 md:space-y-6" action="#" onSubmit={handleFromSubmit}>
+
+                        {userCreated && (
+                    <div className="my-4 text-center">
+                        User created.<br />
+                        Now you can{' '}
+                    <Link className="underline" href={'/login'}>Login &raquo;</Link>
+                   </div>
+                   )}
+                   {error && (
+                    <div className="my-4 text-center">
+                     An error has occurred.<br />
+                      Please try again later
+                    </div>
+                     )}
+
+                        <form className="space-y-4 md:space-y-6" action="#" onSubmit={(ev) => handleFromSubmit(ev)}>
                             <div>
                                 <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
                                 <input type="email" name="email" id="email" value={email}
